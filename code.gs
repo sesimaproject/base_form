@@ -33,7 +33,7 @@ function doSubmitAjax(req) {
     ]];
     //SPREAD_SHEET_IDは連携するスプレッドシートのID、SHEET_NAMEはシート名をそれぞれ置き換えてください。
     const app = SpreadsheetApp.openById('シートID');
-    const sheet = app.getSheetByName('database');
+    const sheet = app.getSheetByName('シート名');
     const insertRow = sheet.getDataRange().getLastRow() + 1;  //挿入行
     const insertCol = 1;  //挿入列
     const insertRowNum = data.length;  //挿入行数
